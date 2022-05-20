@@ -9,8 +9,7 @@
 }
 
 .App {
-  background-color: blueviolet;
-  padding: 0 20px;
+  background-color: rgb(28, 10, 46);
 }
 
 a {
@@ -20,23 +19,23 @@ a {
 
 .header {
   padding: 10px ;
-  margin: 20px auto;
   position: fixed;
   width: 100%;
-  display: flex;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
-  background-color: #fff;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  background-color: rgb(238, 238, 238);
   z-index: 10;
+}
+
+.img {
+  width: 100%;
+  height: 85%;
+  padding: 10px 20px;
+  overflow: hidden;
 }
 
 .card img {
   width: 100%;
-  height: 80%;
+  height: auto;
   padding: 20px;
 }
 
@@ -51,9 +50,10 @@ a {
   position: relative;
   margin: 20px;
   width: 28%;
-  height: 400px;
-  background-color: #fff;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
+  overflow: hidden;
 }
 
 .description {
@@ -67,15 +67,15 @@ a {
 .description h2 {
   position: absolute;
   top: 225px;
-  left: -20px;
   padding: 5px  20px 5px 5px;
-  background-color: darkorange;
+  background-color: rgb(255, 136, 0);
 }
 
 .details {
+  background-color: #fff;
   display: flex;
   width: 70%;
-  height: 60vh;
+  height: 70vh;
 }
 
 .detail-content {
@@ -89,3 +89,16 @@ a {
 .content {
   padding: 20px 10px;
 }
+
+.detail-content img {
+  padding: 30px;
+}
+
+.price {
+  padding: 5px 10px;
+  background-color: rgb(255, 136, 0);
+  width: 100px;
+  margin-top: 20px;
+}
+
+/* W5Z0JEKNBBMDMMPXD2W7T3GR2J4G */

@@ -35,7 +35,7 @@ const ProductDetail = () => {
       <img src={image} alt={title}/>
       <div className="content">
       <h1>{title}</h1>
-      <h2>{price}</h2>
+      <h2 className="price">${price}</h2>
       <p>{category}</p>
       <p>{description}</p>
       </div>

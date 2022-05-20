@@ -10,7 +10,9 @@ const ProductComponent = () => {
     return (
       <div key={id} className ='card'>
       <Link to={`/product/${id}`}>
+      <div className="img">
       <img src={image} alt={title}/>
+      </div>
       <div className="description">
       <h3>{title}</h3>
       <h2>$ {price}</h2>
