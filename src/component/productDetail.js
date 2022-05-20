@@ -30,14 +30,17 @@ const ProductDetail = () => {
   }, [productId]);
   
   return (
-    <div>
-      <h3>Product detail</h3>
+    <di className="detail-content">
+      <div className="details">
       <img src={image} alt={title}/>
-      <p>{title}</p>
-      <p>{price}</p>
+      <div className="content">
+      <h1>{title}</h1>
+      <h2>{price}</h2>
       <p>{category}</p>
       <p>{description}</p>
+      </div>
     </div>
+    </di>
   );
 }
 

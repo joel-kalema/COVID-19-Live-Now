@@ -10,6 +10,7 @@
 
 .App {
   background-color: blueviolet;
+  padding: 0 20px;
 }
 
 a {
@@ -71,3 +72,20 @@ a {
   background-color: darkorange;
 }
 
+.details {
+  display: flex;
+  width: 70%;
+  height: 60vh;
+}
+
+.detail-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  padding: 20px 10px;
+}
