@@ -20,6 +20,13 @@ export const selectedProduct = (product) => {
   }
 }
 
+export const removeSelectedProduct = (product) => {
+  return {
+    type: REAMOVE_SELECTED_PRODUCT,
+    payload: product, 
+  }
+}
+
 
 export const productReducer = (state = intialState, {type, payload}) => {
   switch (type) {
@@ -32,8 +39,10 @@ export const productReducer = (state = intialState, {type, payload}) => {
 
 export const selectAddReducer = (state = {}, {type, payload}) => {
   switch (type) {
-    case SELECTED_PRODUCT :
-    return {...state, ...payload};
+    case SELECTED_PRODUCT:
+      return {...state, ...payload};
+    case REAMOVE_SELECTED_PRODUCT:
+      return {};
     default:
       return state;
   }

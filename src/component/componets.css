@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambay&family=Kanit&family=Krona+One&family=Montserrat:wght@300;900&family=Prompt:wght@300;500&family=Quicksand:wght@300&family=Roboto&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  box-sizing: border-box;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.App {
+  background-color: blueviolet;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+}
+
+.card img {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+}
+
+.cards {
+  padding: 10rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  margin: 20px;
+  width: 28%;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
+}
+
+.description {
+  padding: 10px;
+}
+
+.description h3 {
+  font-size: 12px;
+}
+
+.description h2 {
+  position: absolute;
+  top: 225px;
+  left: -20px;
+  padding: 5px  20px 5px 5px;
+  background-color: darkorange;
+}
+
