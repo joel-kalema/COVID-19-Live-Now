@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cambay&family=Kanit&family=Krona+One&family=Montserrat:wght@300;900&family=Prompt:wght@300;500&family=Quicksand:wght@300&family=Roboto&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay&family=Kanit&family=Krona+One&family=Montserrat:wght@300;900&family=Poppins:wght@200&family=Prompt:wght@300;500&family=Quicksand:wght@300&family=Roboto&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   justify-content: space-around;
   box-sizing: border-box;
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App {
-  background-color: rgb(28, 10, 46);
+  background-color: #0d1926;
+  overflow: hidden;
 }
 
 a {
@@ -17,18 +18,43 @@ a {
   color: rgb(20, 20, 20);
 }
 
+input {
+  margin-top: 8rem;
+  margin-left: 40rem;
+  border: rgb(84, 103, 104) solid 1px;
+  background-color: #112030;
+  outline: none;
+  color: #fff;
+  padding: 5px;
+}
+
+.cercle2 {
+  filter: blur(200px);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: #247ad0e0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-filter: blur(200px);
+}
+
 .header {
-  padding: 10px ;
+  padding: 10px;
   position: fixed;
   width: 100%;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
-  background-color: rgb(238, 238, 238);
+  background-color: #18283a;
   z-index: 10;
+  color: #fff;
 }
 
 .img {
   width: 100%;
-  height: 85%;
+  height: 50%;
   padding: 10px 20px;
   overflow: hidden;
 }
@@ -41,17 +67,20 @@ a {
 
 .cards {
   padding: 10rem;
+  justify-content: flex-start;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  color: #fff;
 }
 
 .card {
   position: relative;
-  margin: 20px;
-  width: 28%;
-  height: 450px;
-  background-color: rgb(255, 255, 255);
+  margin: 1%;
+  width: 18%;
+  height: 300px;
+  border: rgb(84, 103, 104) solid 1px;
+  background-color: #243342;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
   overflow: hidden;
 }
@@ -62,13 +91,6 @@ a {
 
 .description h3 {
   font-size: 12px;
-}
-
-.description h2 {
-  position: absolute;
-  top: 225px;
-  padding: 5px  20px 5px 5px;
-  background-color: rgb(255, 136, 0);
 }
 
 .details {
@@ -100,5 +122,3 @@ a {
   width: 100px;
   margin-top: 20px;
 }
-
-/* W5Z0JEKNBBMDMMPXD2W7T3GR2J4G */
