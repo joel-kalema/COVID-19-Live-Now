@@ -32,6 +32,7 @@ const ProductList = () => {
     <div>
       <div>
         <di className="cercle2" />
+        <di className="cercle1" />
         <ProductComponent />
       </div>
     </div>

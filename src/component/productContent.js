@@ -18,7 +18,6 @@ const ProductComponent = () => {
             <img src={countryInfo.flag} alt="" />
           </div>
           <div className="description">
-            <h3>{country}</h3>
             <h2>{country}</h2>
             <p>word</p>
           </div>
