@@ -1,19 +1,25 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
-import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch, useSelector } from 'react-redux';
+import { BiChevronLeftCircle } from 'react-icons/bi';
 import { selectedProduct, removeSelectedProduct } from '../redux/action/productAction';
 
 const ProductDetail = () => {
   const product = useSelector((state) => state.product);
-  const { country, countryInfo } = product;
+  const {
+    // eslint-disable-next-line max-len
+    country, continent, casesPerOneMillion, deathsPerOneMillion, recoveredPerOneMillion, testsPerOneMillion, todayCases, todayDeaths, updated, countryInfo,
+  } = product;
+
+  const { flag } = { ...countryInfo };
+
+  // eslint-disable-next-line radix
+  const date = new Date(parseInt(updated));
+  const lastUpdate = date.toString();
   const { productId } = useParams();
-  console.log(useParams());
   const dispatch = useDispatch();
-  console.log(productId);
-  console.log(product);
 
   const flechProductDetail = async () => {
     const respons = await axios
@@ -22,7 +28,6 @@ const ProductDetail = () => {
         console.log('error', error);
       });
     dispatch(selectedProduct(respons.data));
-    console.log(respons);
   };
 
   useEffect(() => {
@@ -34,16 +39,51 @@ const ProductDetail = () => {
 
   return (
     <di className="detail-content">
-      <div className="details">
-        <div>
-          <div style={{ width: 200, height: 200 }}>
-            <CircularProgressbar value={66} />
+      <div className="content">
+        <Link to="/"><BiChevronLeftCircle className="back" /></Link>
+        <div className="country-data">
+          <img src={flag} alt={country} />
+          <h2 className="name">{country}</h2>
+          <p className="continent">{continent}</p>
+          <div className="day_data">
+            <p>
+              todayCases:
+              {' '}
+              {todayCases}
+            </p>
+            <p>
+              todayDeaths:
+              {' '}
+              {todayDeaths}
+            </p>
           </div>
+          <p>
+            Updated:
+            {' '}
+            {lastUpdate}
+          </p>
         </div>
-        {/* <img src={countryInfo.flag} alt=''/> */}
-        <div className="content">
-          <h2>{country}</h2>
-          <h2 className="price">re</h2>
+        <div>
+          <p className="cases">
+            casesPerOneMillion:
+            {' '}
+            {casesPerOneMillion}
+          </p>
+          <p className="death">
+            deathsPerOneMillion:
+            {' '}
+            {deathsPerOneMillion}
+          </p>
+          <p className="recovered">
+            recoveredPerOneMillion:
+            {' '}
+            {recoveredPerOneMillion}
+          </p>
+          <p className="tested">
+            testsPerOneMillion:
+            {' '}
+            {testsPerOneMillion}
+          </p>
         </div>
       </div>
     </di>

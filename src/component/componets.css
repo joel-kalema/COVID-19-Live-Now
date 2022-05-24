@@ -19,7 +19,7 @@ a {
   color: rgb(225, 255, 255);
 }
 
-input {
+select {
   margin-top: 8rem;
   margin-left: 40rem;
   border: rgb(84, 103, 104) solid 1px;
@@ -27,6 +27,7 @@ input {
   outline: none;
   color: #fff;
   padding: 5px;
+  z-index: 10;
 }
 
 .cercle2 {
@@ -81,19 +82,18 @@ input {
   padding: 10px;
   position: fixed;
   width: 100%;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
+  backdrop-filter: blur(3rem);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.171);
   background-color: #18283a;
   z-index: 10;
   color: #fff;
 }
 
 .header h1 {
-  font-size: 17px;
+  font-size: 19px;
   font-weight: bold;
   font-family: 'Comfortaa', cursive;
-  background: -webkit-linear-gradient(#5cbeff, #2ecc71);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: aquamarine;
 }
 
 .img {
@@ -105,7 +105,7 @@ input {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 20px;
 }
 
@@ -122,12 +122,16 @@ input {
   position: relative;
   margin: 1%;
   width: 18%;
-  height: 300px;
+  height: 270px;
   border: rgb(84, 103, 104) solid 1px;
   background-color: #24334238;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
   overflow: hidden;
   z-index: 7;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.795);
 }
 
 .description {
@@ -138,32 +142,133 @@ input {
   font-size: 12px;
 }
 
-.details {
-  background-color: #fff;
+.detail-content {
+  background-color: #0d1926;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+.back {
+  font-size: 30px;
+  position: absolute;
+  left: 20px;
+}
+
+.content {
+  position: relative;
+  padding: 20px 10px;
+  border: rgb(84, 103, 104) solid 1px;
+  background-color: #24334238;
   display: flex;
   width: 70%;
   height: 70vh;
 }
 
-.detail-content {
+.country-data {
+  width: 50%;
+}
+
+.name {
+  font-size: 50px;
+}
+
+.continent {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.day_data {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+  justify-content: flex-start;
 }
 
-.content {
-  padding: 20px 10px;
+.cases {
+  background-color: rgba(255, 140, 0, 0.699);
+  padding: 3px;
+  margin-bottom: 5px;
+  margin-top: 4rem;
 }
 
-.detail-content img {
-  padding: 30px;
+.death {
+  background-color: rgba(255, 0, 0, 0.678);
+  padding: 3px;
+  margin-bottom: 5px;
 }
 
-.price {
-  padding: 5px 10px;
-  background-color: rgb(255, 136, 0);
-  width: 100px;
-  margin-top: 20px;
+.recovered {
+  background-color: green;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.tested {
+  background-color: dodgerblue;
+  padding: 3px;
+}
+
+@media only screen and (max-width: 540px) {
+  select {
+    margin-top: 80px;
+    margin-left: 60px;
+  }
+
+  .cercle2 {
+    display: none;
+  }
+
+  .cards {
+    padding: 1rem 0;
+  }
+
+  .card {
+    width: 48%;
+  }
+
+  .img {
+    padding: 10px 10px;
+  }
+
+  .detail-content {
+    min-height: 100vh;
+  }
+
+  .content {
+    text-align: center;
+    padding: 20px 10px;
+    flex-direction: column;
+    width: 95%;
+    height: 95vh;
+    align-items: center;
+  }
+
+  .country-data {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .country-data img {
+    width: 50%;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .continent {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .back {
+    font-size: 30px;
+    top: 40px;
+    left: 20px;
+  }
 }
