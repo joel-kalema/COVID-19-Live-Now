@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cambay&family=Kanit&family=Krona+One&family=Montserrat:wght@300;900&family=Poppins:wght@200&family=Prompt:wght@300;500&family=Quicksand:wght@300&family=Roboto&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cambay&family=Comfortaa:wght@700&family=Kanit&family=Krona+One&family=Montserrat:wght@300;900&family=Poppins:ital,wght@0,200;1,800&family=Prompt:wght@300;500&family=Quicksand:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&family=Roboto+Flex:opsz,wght@8..144,100&family=Ubuntu:wght@700&display=swap');
 
 * {
   margin: 0;
@@ -20,8 +20,8 @@ a {
 }
 
 select {
-  margin-top: 8rem;
-  margin-left: 40rem;
+  margin-top: 2rem;
+  margin-left: 35rem;
   border: rgb(84, 103, 104) solid 1px;
   background-color: #112030;
   outline: none;
@@ -83,17 +83,38 @@ select {
   position: fixed;
   width: 100%;
   backdrop-filter: blur(3rem);
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.171);
-  background-color: #18283a;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0);
+  background-color: #18283a00;
   z-index: 10;
   color: #fff;
 }
 
 .header h1 {
-  font-size: 19px;
+  padding: 15px 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
   font-weight: bold;
-  font-family: 'Comfortaa', cursive;
-  color: aquamarine;
+  color: rgb(205, 248, 234);
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.descriptions {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border: #fff solid 1px;
+  width: 650px;
+  font-size: 14px;
+  margin: 30px auto;
+  backdrop-filter: blur(2rem);
+  background-color: #24334200;
 }
 
 .img {
@@ -110,7 +131,7 @@ select {
 }
 
 .cards {
-  padding: 10rem;
+  padding: 4rem 13rem;
   justify-content: flex-start;
   width: 100%;
   display: flex;
@@ -132,10 +153,19 @@ select {
 
 .card:hover {
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.795);
+  border: rgb(190, 200, 201) solid 1px;
 }
 
 .description {
   padding: 10px;
+}
+
+.virus-icon {
+  color: #1a2c3f;
+  position: absolute;
+  right: 0;
+  font-size: 550px;
+  opacity: 0.2;
 }
 
 .description h3 {
@@ -144,6 +174,7 @@ select {
 
 .detail-content {
   background-color: #0d1926;
+  overflow: hidden;
   display: flex;
   align-items: center;
   width: 100%;
@@ -161,10 +192,12 @@ select {
   position: relative;
   padding: 20px 10px;
   border: rgb(84, 103, 104) solid 1px;
+  backdrop-filter: blur(2rem);
   background-color: #24334238;
   display: flex;
   width: 70%;
   height: 70vh;
+  overflow: hidden;
 }
 
 .country-data {
@@ -211,11 +244,20 @@ select {
 
 @media only screen and (max-width: 540px) {
   select {
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 60px;
   }
 
   .cercle2 {
+    display: none;
+  }
+
+  .title {
+    font-size: 60px;
+    margin-top: 5rem;
+  }
+
+  .descriptions {
     display: none;
   }
 
@@ -233,6 +275,11 @@ select {
 
   .detail-content {
     min-height: 100vh;
+  }
+
+  .virus-icon {
+    right: 0;
+    font-size: 240px;
   }
 
   .content {
@@ -268,7 +315,7 @@ select {
 
   .back {
     font-size: 30px;
-    top: 40px;
+    top: 70px;
     left: 20px;
   }
 }

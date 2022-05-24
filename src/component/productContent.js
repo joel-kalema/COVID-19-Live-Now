@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable max-len */
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
@@ -38,6 +40,13 @@ const ProductComponent = () => {
   });
   return (
     <>
+      <h1 className="title">COVID-19 Live Now</h1>
+      <div className="descriptions">
+        <p>The coronavirus COVID-19 is affecting 228 countries and territories.</p>
+        <p>The day is reset after midnight GMT+0. The list of countries and their</p>
+        <p>regional classification is based on the United Nations Geoscheme. Sources are provided</p>
+        <p>under"Latest News." Learn more about Worldometer's COVID-19 data</p>
+      </div>
       {/* <input
         type="text"
         placeholder="Search country..."

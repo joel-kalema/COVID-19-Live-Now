@@ -4,6 +4,7 @@ import axios from 'axios';
 import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { BiChevronLeftCircle } from 'react-icons/bi';
+import { RiVirusFill } from 'react-icons/ri';
 import { selectedProduct, removeSelectedProduct } from '../redux/action/productAction';
 
 const ProductDetail = () => {
@@ -39,6 +40,7 @@ const ProductDetail = () => {
 
   return (
     <di className="detail-content">
+      <RiVirusFill className="virus-icon" />
       <div className="content">
         <Link to="/"><BiChevronLeftCircle className="back" /></Link>
         <div className="country-data">

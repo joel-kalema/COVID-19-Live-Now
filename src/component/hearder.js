@@ -1,13 +1,13 @@
 import React from 'react';
 import './componets.css';
-import { AiOutlineGlobal } from 'react-icons/ai';
+import { RiVirusFill } from 'react-icons/ri';
 
 const Header = () => (
   <div className="header">
     <h1>
-      COVID-19 Live Now
+      Fight Covid-19
       {' '}
-      <span><AiOutlineGlobal className="user-icon" /></span>
+      <span><RiVirusFill className="user-icon" /></span>
     </h1>
   </div>
 );
