@@ -237,7 +237,7 @@ select {
 .details-cases {
   padding: 20px;
   border: rgba(255, 255, 255, 0.699) 1px solid;
-  height: 50%;
+  height: 60%;
   margin-top: 50px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
   background-color: rgba(255, 255, 255, 0.089);
@@ -246,6 +246,11 @@ select {
 .day_data {
   display: flex;
   justify-content: flex-start;
+}
+
+.day_data_death {
+  margin-left: 15px;
+  color: rgb(255, 153, 112);
 }
 
 .cases {

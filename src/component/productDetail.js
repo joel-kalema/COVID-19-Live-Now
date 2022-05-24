@@ -4,7 +4,6 @@ import axios from 'axios';
 import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { BiChevronLeftCircle } from 'react-icons/bi';
-import { RiVirusFill } from 'react-icons/ri';
 import { AiOutlineContainer } from 'react-icons/ai';
 import { selectedProduct, removeSelectedProduct } from '../redux/action/productAction';
 
@@ -39,9 +38,14 @@ const ProductDetail = () => {
     dispatch(removeSelectedProduct());
   }, [productId]);
 
+  const backgroundImag = {
+    backgroundImage: `linear-gradient(#0d1926, #0d1926a1),url(${flag})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  };
+
   return (
-    <di className="detail-content">
-      <RiVirusFill className="virus-icon" />
+    <di className="detail-content" style={backgroundImag}>
       <div className="content">
         <Link to="/"><BiChevronLeftCircle className="back" /></Link>
         <div className="country-data">
@@ -54,7 +58,7 @@ const ProductDetail = () => {
               {' '}
               {todayCases}
             </p>
-            <p>
+            <p className="day_data_death">
               todayDeaths:
               {' '}
               {todayDeaths}
