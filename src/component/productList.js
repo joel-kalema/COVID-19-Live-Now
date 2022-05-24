@@ -31,8 +31,8 @@ const ProductList = () => {
   return (
     <div>
       <div>
-        <di className="cercle2" />
-        <di className="cercle1" />
+        <div className="cercle2" />
+        <div className="cercle1" />
         <ProductComponent />
       </div>
     </div>
