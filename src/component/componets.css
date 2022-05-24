@@ -237,7 +237,7 @@ select {
 .details-cases {
   padding: 20px;
   border: rgba(255, 255, 255, 0.699) 1px solid;
-  height: 60%;
+  height: 50%;
   margin-top: 50px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
   background-color: rgba(255, 255, 255, 0.089);
@@ -252,7 +252,12 @@ select {
   background-color: rgba(255, 140, 0, 0.699);
   padding: 3px;
   margin-bottom: 5px;
-  margin-top: 4rem;
+  margin-top: 2rem;
+}
+
+.cases-icon {
+  font-size: 30px;
+  text-align: center;
 }
 
 .death {

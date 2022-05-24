@@ -67,7 +67,7 @@ const ProductDetail = () => {
           </p>
         </div>
         <div className="details-cases">
-          <AiOutlineContainer />
+          <AiOutlineContainer className="cases-icon" />
           <p className="cases">
             casesPerOneMillion:
             {' '}
