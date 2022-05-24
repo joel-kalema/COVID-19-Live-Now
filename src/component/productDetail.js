@@ -5,6 +5,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { BiChevronLeftCircle } from 'react-icons/bi';
 import { RiVirusFill } from 'react-icons/ri';
+import { AiOutlineContainer } from 'react-icons/ai';
 import { selectedProduct, removeSelectedProduct } from '../redux/action/productAction';
 
 const ProductDetail = () => {
@@ -65,7 +66,8 @@ const ProductDetail = () => {
             {lastUpdate}
           </p>
         </div>
-        <div>
+        <div className="details-cases">
+          <AiOutlineContainer />
           <p className="cases">
             casesPerOneMillion:
             {' '}

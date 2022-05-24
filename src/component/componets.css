@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+#root {
+  background-color: #0d1926;
+}
+
 .App {
   background-color: #0d1926;
   overflow: hidden;
@@ -79,7 +83,7 @@ select {
 }
 
 .header {
-  padding: 10px;
+  padding: 10px 60px;
   position: fixed;
   width: 100%;
   backdrop-filter: blur(3rem);
@@ -87,6 +91,9 @@ select {
   background-color: #18283a00;
   z-index: 10;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header h1 {
@@ -95,6 +102,14 @@ select {
   font-size: 20px;
   font-weight: bold;
   color: rgb(205, 248, 234);
+}
+
+.setings {
+  margin-right: 6rem;
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
 }
 
 .title {
@@ -190,6 +205,7 @@ select {
 }
 
 .content {
+  margin-top: 2rem;
   position: relative;
   padding: 20px 10px;
   border: rgb(84, 103, 104) solid 1px;
@@ -197,7 +213,7 @@ select {
   background-color: #24334238;
   display: flex;
   width: 70%;
-  height: 70vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -212,6 +228,15 @@ select {
 .continent {
   font-size: 30px;
   margin-bottom: 40px;
+}
+
+.country-data img {
+  width: 150px;
+}
+
+.details-cases {
+  padding: 20px;
+  border: #fff 1px solid;
 }
 
 .day_data {
@@ -244,6 +269,16 @@ select {
 }
 
 @media only screen and (max-width: 540px) {
+  .setings {
+    margin-right: 20px;
+    width: 18%;
+    font-size: 20px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
   select {
     margin-top: 40px;
     margin-left: 60px;

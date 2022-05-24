@@ -1,7 +1,8 @@
 import React from 'react';
 import './componets.css';
 import { RiVirusFill } from 'react-icons/ri';
-import { MdOutlineSettingsSuggest } from 'react-icons/io';
+import { MdOutlineSettingsSuggest } from 'react-icons/md';
+import { BiMicrophone } from 'react-icons/bi';
 
 const Header = () => (
   <div className="header">
@@ -10,7 +11,8 @@ const Header = () => (
       {' '}
       <span><RiVirusFill className="user-icon" /></span>
     </h1>
-    <div>
+    <div className="setings">
+      <BiMicrophone />
       <MdOutlineSettingsSuggest />
     </div>
   </div>
