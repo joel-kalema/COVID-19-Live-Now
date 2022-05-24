@@ -236,7 +236,11 @@ select {
 
 .details-cases {
   padding: 20px;
-  border: #fff 1px solid;
+  border: rgba(255, 255, 255, 0.699) 1px solid;
+  height: 60%;
+  margin-top: 50px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
+  background-color: rgba(255, 255, 255, 0.089);
 }
 
 .day_data {
@@ -281,7 +285,7 @@ select {
 
   select {
     margin-top: 40px;
-    margin-left: 60px;
+    margin-left: 85px;
   }
 
   .cercle2 {
@@ -289,8 +293,10 @@ select {
   }
 
   .title {
-    font-size: 60px;
+    font-size: 55px;
     margin-top: 5rem;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .descriptions {
