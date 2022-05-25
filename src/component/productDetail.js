@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -26,7 +27,7 @@ const ProductDetail = () => {
     const respons = await axios
       .get(`https://corona.lmao.ninja/v2/countries/${productId}`)
       .catch((error) => {
-        console.log('error', error);
+        alert('error', error);
       });
     dispatch(selectedProduct(respons.data));
   };
