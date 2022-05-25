@@ -1,3 +1,4 @@
+/* eslint-disable import/named */
 import { combineReducers } from 'redux';
 import { productReducer, selectAddReducer } from '../action/productAction';
 
