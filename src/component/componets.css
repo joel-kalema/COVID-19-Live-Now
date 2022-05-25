@@ -372,3 +372,60 @@ select {
     left: 20px;
   }
 }
+
+@media only screen and (min-width: 541px) and (max-width: 820px) {
+  select {
+    margin-top: 40px;
+    margin-left: 12rem;
+  }
+
+  .descriptions {
+    width: 70%;
+  }
+
+  .cards {
+    padding: 4rem 1.5rem;
+  }
+
+  .card {
+    margin: 0.5%;
+    width: 24%;
+  }
+
+  .content {
+    text-align: center;
+    padding: 20px 10px;
+    flex-direction: column;
+    width: 95%;
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 912px) {
+  select {
+    margin-top: 40px;
+    margin-left: 17rem;
+  }
+
+  .descriptions {
+    width: 70%;
+  }
+
+  .cards {
+    padding: 4rem 1.5rem;
+  }
+
+  .card {
+    margin: 0.5%;
+    width: 19%;
+  }
+
+  .content {
+    text-align: center;
+    padding: 20px 10px;
+    flex-direction: column;
+    width: 95%;
+    height: 60vh;
+    align-items: center;
+  }
+}
