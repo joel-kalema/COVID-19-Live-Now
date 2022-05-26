@@ -14,7 +14,7 @@
 
 ## [Live Demo Link](https://helpful-kashata-9d375a.netlify.app)
 
-## [Live Demo Link](https://www.loom.com/share/b6f4e4f6c91e440697f4d848e87adc78)
+## [Live Video](https://www.loom.com/share/3d049f8e690a4f429b81e5eca9d66400)
 
 ## Built With
 
