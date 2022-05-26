@@ -9,11 +9,8 @@ import './componets.css';
 const ProductComponent = () => {
   const products = useSelector((state) => state.allPreoducts.products);
   const [searchCountries, setSearchCountries] = useState('All');
-
   const allCountries = [...new Set(products.map((item) => item.country))];
-
   const filterCountry = products.filter((item) => (searchCountries !== 'All' ? item.country.includes(searchCountries) : item));
-
   // .slice(0, 100)
   const renderList = filterCountry.map((product, id) => {
     const {

@@ -6,7 +6,7 @@ import { setProduct } from '../redux/action/productAction';
 import ProductComponent from './productContent';
 import './componets.css';
 
-const Home = () => {
+const ProductList = () => {
   useSelector((state) => state);
   const dispatch = useDispatch();
 
@@ -37,4 +37,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ProductList;
