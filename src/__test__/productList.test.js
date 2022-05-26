@@ -5,7 +5,7 @@ import App from '../App';
 import store from '../redux/store';
 import { productReducer } from '../redux/action/productAction';
 
-describe('test PlayersList component', () => {
+describe('test App component', () => {
   test('check whether the component renders correctly', () => {
     const tree = render(
       <React.StrictMode>
@@ -15,6 +15,12 @@ describe('test PlayersList component', () => {
       </React.StrictMode>,
     );
     expect(tree).toMatchSnapshot();
+  });
+});
+
+it('Expect Stocks reducer to return the initial state', () => {
+  expect(productReducer(undefined, {})).toEqual({
+    products: [],
   });
 });
 
