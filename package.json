@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "apexcharts": "^3.35.2",
     "axios": "^0.27.2",
+    "deep-freeze": "^0.0.1",
     "react": "^18.1.0",
     "react-apexcharts": "^1.4.0",
     "react-circular-progressbar": "^2.0.4",
