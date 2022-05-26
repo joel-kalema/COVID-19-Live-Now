@@ -8,7 +8,7 @@ import { BiChevronLeftCircle } from 'react-icons/bi';
 import { AiOutlineContainer } from 'react-icons/ai';
 import { selectedProduct, removeSelectedProduct } from '../redux/action/productAction';
 
-const ProductDetail = () => {
+const Detail = () => {
   const product = useSelector((state) => state.product);
   const {
     // eslint-disable-next-line max-len
@@ -99,4 +99,4 @@ const ProductDetail = () => {
   );
 };
 
-export default ProductDetail;
+export default Detail;

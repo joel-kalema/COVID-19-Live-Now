@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './component/hearder';
-import ProductList from './component/productList';
-import ProductDetail from './component/productDetail';
+import Home from './component/productList';
+import Detail from './component/productDetail';
 import './component/componets.css';
 
 function App() {
@@ -10,9 +10,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<ProductList />} />
-          <Route path="/product/:productId" element={<ProductDetail />} />
-          <Route>404 Not found</Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:productId" element={<Detail />} />
         </Routes>
       </Router>
     </div>
