@@ -1,4 +1,4 @@
-/* eslint-disable no-alert */
+/* eslint-disable radix */
 import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -11,13 +11,12 @@ import { selectedProduct, removeSelectedProduct } from '../redux/action/productA
 const Detail = () => {
   const product = useSelector((state) => state.product);
   const {
-    // eslint-disable-next-line max-len
-    country, continent, casesPerOneMillion, deathsPerOneMillion, recoveredPerOneMillion, testsPerOneMillion, todayCases, todayDeaths, updated, countryInfo,
+    country, continent, casesPerOneMillion, deathsPerOneMillion, recoveredPerOneMillion,
+    testsPerOneMillion, todayCases, todayDeaths, updated, countryInfo,
   } = product;
 
   const { flag } = { ...countryInfo };
 
-  // eslint-disable-next-line radix
   const date = new Date(parseInt(updated));
   const lastUpdate = date.toString();
   const { productId } = useParams();
@@ -27,7 +26,7 @@ const Detail = () => {
     const respons = await axios
       .get(`https://corona.lmao.ninja/v2/countries/${productId}`)
       .catch((error) => {
-        alert('error', error);
+        (<h1>{error}</h1>);
       });
     dispatch(selectedProduct(respons.data));
   };
@@ -58,6 +57,7 @@ const Detail = () => {
               todayCases:
               {' '}
               {todayCases}
+              {' '}
             </p>
             <p className="day_data_death">
               todayDeaths:
