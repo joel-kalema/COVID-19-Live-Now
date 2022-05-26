@@ -1,56 +1,78 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# COVID-19-Live-Now
 
-> Description the project.
-
+> The coronavirus COVID-19 is affecting 228 countries and territories. The day is reset after midnight GMT+0. The list of countries and their regional classification is based on the United Nations Geoscheme. Sources are provided under"Latest News. Learn more about Worldometer's COVID-19 data.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
+- Redux
+- API
 
-## Live Demo (if available)
+## ![reactCapston](https://user-images.githubusercontent.com/57408419/170157063-d4406721-7202-40b5-801a-1f2d2e18da44.jpg)
 
-[Live Demo Link](https://livedemo.com)
+## [Live Demo Link](https://helpful-kashata-9d375a.netlify.app)
 
+## [Live Video](https://www.loom.com/share/3d049f8e690a4f429b81e5eca9d66400)
 
-## Getting Started
+## Built With
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+      alt="react" width="60" height="60" /> </a>
+<a href='https://redux.js.org'><img src='https://camo.githubusercontent.com/f28b5bc7822f1b7bb28a96d8d09e7d79169248fc/687474703a2f2f692e696d6775722e636f6d2f4a65567164514d2e706e67' height='60' alt='Redux Logo' aria-label='redux.js.org' /></a>
 
+## Get Started
 
-To get a local copy up and running follow these simple example steps.
+To get a clone of the project, run `git clone git@github.com:jssol/todo-list-react.git && cd $_`
+j
 
-### Prerequisites
+### Available Scripts
 
-### Setup
+In the project directory, you can run:
 
-### Install
+**`npm install`**
 
-### Usage
+Gets all the required dependencies of the projects.
 
-### Run tests
+**`npm start`**
 
-### Deployment
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+**`npm test`**
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more
+information.
+
+[**Redux Toolkit**](https://redux-toolkit.js.org) is our official recommended approach for writing Redux logic. It wraps around the Redux core, and contains packages and functions that we think are essential for building a Redux app. Redux Toolkit builds in our suggested best practices, simplifies most Redux tasks, prevents common mistakes, and makes it easier to write Redux applications.
+
+```
+npm install @reduxjs/toolkit react-redux
+```
+
+For the Redux core library by itself:
+
+```
+npm install redux
+```
+
+For more details, see [the Installation docs page](https://redux.js.org/introduction/installation).
 
 ## Authors
 
-👤 **Author1**
+<a href="https://github.com/joel-kalema" target="blank"><img align="center"
+      src="https://user-images.githubusercontent.com/57408419/163676914-ad94695e-ba9f-4fea-9a06-02a93c7797a5.jpg"
+      alt="adampithewan" height="50" width="50"/></a> **JOEL KALEMA**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@joel-kalema](https://github.com/joel-kalema)
+- Twitter: [@JoelJklm](https://www.linkedin.com/in/joel-kalema-30518a230/)
+- LinkedIn: [joel kalema](https://twitter.com/JoelJklm)
 
 ## 🤝 Contributing
 
@@ -64,7 +86,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 - Inspiration
 - etc
 
