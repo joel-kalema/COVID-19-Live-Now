@@ -14,8 +14,6 @@
 
 ## [Live Demo Link](https://helpful-kashata-9d375a.netlify.app)
 
-## [Live Video](https://www.loom.com/share/3d049f8e690a4f429b81e5eca9d66400)
-
 ## Built With
 
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img
