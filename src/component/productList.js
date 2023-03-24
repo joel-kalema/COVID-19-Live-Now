@@ -9,6 +9,8 @@ import './componets.css';
 const ProductList = () => {
   useSelector((state) => state);
   const dispatch = useDispatch();
+  const link = 'https://api.covidtracking.com/v2/us/daily';
+  console.log(link);
 
   const flechProduct = async () => {
     const response = await axios
