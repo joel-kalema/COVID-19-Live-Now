@@ -134,13 +134,12 @@ select {
 
 .img {
   width: 100%;
-  height: 50%;
-  padding: 10px 20px;
+  height: 40%;
   overflow: hidden;
 }
 
 .card img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   padding: 20px;
 }
@@ -159,7 +158,7 @@ select {
   position: relative;
   margin: 0.5%;
   width: 19%;
-  height: 270px;
+  height: 180px;
   border: rgb(84, 103, 104) solid 1px;
   background-color: #24334238;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.514);
@@ -174,6 +173,7 @@ select {
 
 .description {
   padding: 10px;
+  margin-left: .5rem;
 }
 
 .virus-icon {
@@ -184,7 +184,11 @@ select {
   opacity: 0.2;
 }
 
-.description h3 {
+.description h2 {
+  font-size: 15px;
+}
+
+.description p {
   font-size: 12px;
 }
 
