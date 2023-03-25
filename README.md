@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # COVID-19-Live-Now
 
 > The coronavirus COVID-19 is affecting 228 countries and territories. The day is reset after midnight GMT+0. The list of countries and their regional classification is based on the United Nations Geoscheme. Sources are provided under"Latest News. Learn more about Worldometer's COVID-19 data.
