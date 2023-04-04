@@ -1,6 +1,6 @@
 # COVID-19-Live-Now
 
-> A mobile web app that can show the list of countries and their live COVID-19 data.
+> COVID-19-Live-Now is a mobile web app that can show the list of countries and their live COVID-19 data.
 
 ## Built With
 
