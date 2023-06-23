@@ -1,6 +1,7 @@
 # COVID-19-Live-Now
 
-> COVID-19-Live-Now is a mobile web app that can show the list of countries and their live COVID-19 data.
+> COVID-19-Live-Now  is a mobile web application that provides the user with the new cases of Covid-19 for each country and also the regions within the country by getting all the data and the statistics from Narrativa.
+Built With: React, Redux, JavaScript, and CSS.
 
 ## Built With
 
